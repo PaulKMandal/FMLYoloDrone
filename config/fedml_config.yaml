@@ -16,7 +16,7 @@ data_args:
   data_cache_dir: ~/fedcv_data
   partition_method: "homo"
   partition_alpha: 0.5
-  data_conf: "./data/coco128.yaml" # yolo
+  data_conf: "./data/VisDrone.yaml" # yolo
   img_size: [640, 640] # [640, 640]
 
 model_args:
