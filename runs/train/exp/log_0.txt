@@ -1,0 +1,2 @@
+contribution_alg is not set, assessor is None
+client_indexes = [0, 1]

@@ -12,7 +12,7 @@ environment_args:
   bootstrap: config/bootstrap.sh
 
 data_args:
-  dataset: "coco"
+  dataset: "VisDrone"
   data_cache_dir: ~/fedcv_data
   partition_method: "homo"
   partition_alpha: 0.5
