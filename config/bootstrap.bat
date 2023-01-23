@@ -11,7 +11,7 @@ if exist %DATA_PATH% (
 else (
     mkdir %DATA_PATH%
     set cur_dir=%cd%
-    %cur_dir%\..\data\coco128\download_coco128.bat
+    python %cur_dir%\..\data\VisDrone\download_VisDrone.py
 )
 
 

@@ -6,6 +6,8 @@ mkdir -p $DATA_PATH
 
 ## sh ./../data/coco128/download_coco128.sh
 
+echo "Downloading VisDrone Data"
+
 python ./../data/VisDrone/download_VisDrone.py
 
 
