@@ -1,0 +1,29 @@
+1
+
+======== FedML (https://fedml.ai) ========
+FedML version: 0.7.392
+Execution path:/home/paul/.local/lib/python3.10/site-packages/fedml/__init__.py
+
+======== Running Environment ========
+OS: Linux-6.1.4-artix1-1-x86_64-with-glibc2.36
+Hardware: x86_64
+Python version: 3.10.9 (main, Dec 25 2022, 21:29:15) [GCC 12.2.0]
+PyTorch version: 1.13.1+cu117
+MPI4py is installed
+
+======== CPU Configuration ========
+The CPU usage is : 13%
+Available CPU Memory: 40.1 G / 62.43738555908203G
+
+======== GPU Configuration ========
+NVIDIA GPU Info: <pynvml.nvml.LP_struct_c_nvmlDevice_t object at 0x7f2cbfeb0440>
+Available GPU memory: 7.7 G / 8.0G
+torch_is_available = True
+device_count = 1
+device_name = NVIDIA GeForce RTX 2080 Super with Max-Q Design
+
+======== Network Connection Checking ========
+The connection to https://open.fedml.ai is OK.
+The connection to AWS S3 is OK.
+The connection to mqtt.fedml.ai (port:1883) is OK.
+training_type != FEDML_TRAINING_PLATFORM_CROSS_DEVICE and training_type != FEDML_TRAINING_PLATFORM_CROSS_SILO
