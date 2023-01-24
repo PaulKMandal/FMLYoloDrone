@@ -1,6 +1,14 @@
 import sys
+import os
 
-sys.path.insert(0, './../../model/yolov5/')
+print("Python Version")
+
+print (sys.version)
+
+print ("Working directory")
+print(os.getcwd())
+
+sys.path.insert(0, './../model/yolov5/')
 
 from utils.general import download, os, Path
 
