@@ -1,6 +1,7 @@
 #!/bin/sh
+
 ### please customize your script in this region ####
-pip install opencv-python-headless pandas matplotlib seaborn addict
+pip3 install opencv-python-headless pandas matplotlib seaborn addict
 DATA_PATH=$HOME/fedcv_data
 mkdir -p $DATA_PATH
 
@@ -9,8 +10,12 @@ mkdir -p $DATA_PATH
 echo "Downloading VisDrone Data"
 
 #python ./../data/VisDrone/download_VisDrone.py
-#python ./../data/VisDrone/download_VisDrone.py
-python ./../data/VisDrone/download_VisDrone.py
+python3 ./../data/VisDrone/download_VisDrone.py
+
+python3 --version
+
+#python3 ./../data/VisDrone/download_VisDrone.py
+
 ### don't modify this part ###
 echo "[FedML]Bootstrap Finished"
 ##############################
