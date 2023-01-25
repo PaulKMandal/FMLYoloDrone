@@ -576,7 +576,8 @@ def download(url, dir='.', unzip=True, delete=True, curl=False, threads=1, retry
                     LOGGER.warning(f'Failed to download {url}...')
 
         if unzip and success and f.suffix in ('.zip', '.gz'):
-            LOGGER.info(f'Unzipping {f}...')
+            #LOGGER.info(f'Unzipping {f}...')
+            #commenting out to prevent errors with FedML
             if f.suffix == '.zip':
                 ZipFile(f).extractall(path=dir)  # unzip
             elif f.suffix == '.gz':
