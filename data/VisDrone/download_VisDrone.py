@@ -26,7 +26,7 @@ def visdrone2yolo(dir):
       dh = 1. / size[1]
       return (box[0] + box[2] / 2) * dw, (box[1] + box[3] / 2) * dh, box[2] * dw, box[3] * dh
   (dir / 'labels').mkdir(parents=True, exist_ok=True)  # make labels directory
-  pbar = tqdm((dir / 'annotations').glob('*.txt'), desc=f'Converting {dir}')
+  pbar = tqdm((dir / 'annotations').glob('*.txt'), desc=f'Converting {dir}', disable=True) #diable = true is added to prevent FedML from throwing an error
 
   for f in pbar:
       img_size = Image.open((dir / 'images' / f.name).with_suffix('.jpg')).size

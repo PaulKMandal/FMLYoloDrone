@@ -558,7 +558,8 @@ def download(url, dir='.', unzip=True, delete=True, curl=False, threads=1, retry
         if Path(url).is_file():  # exists in current path
             Path(url).rename(f)  # move to dir
         elif not f.exists():
-            LOGGER.info(f'Downloading {url} to {f}...')
+            #LOGGER.info(f'Downloading {url} to {f}...')
+            #Comment out logger.info since FedML treats it as an error
             for i in range(retry + 1):
                 if curl:
                     s = 'sS' if threads > 1 else ''  # silent
