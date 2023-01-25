@@ -38,7 +38,7 @@ def visdrone2yolo(dir):
                   fl.writelines(lines)  # write label.txt
 # Download
 #dir = Path(yaml['path'])  # dataset root dir
-dir = Path('fedcv')
+dir = Path('~/fedcv')
 urls = ['https://github.com/ultralytics/yolov5/releases/download/v1.0/VisDrone2019-DET-train.zip',
       'https://github.com/ultralytics/yolov5/releases/download/v1.0/VisDrone2019-DET-val.zip',
       'https://github.com/ultralytics/yolov5/releases/download/v1.0/VisDrone2019-DET-test-dev.zip',
